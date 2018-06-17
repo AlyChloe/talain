@@ -1,0 +1,26 @@
+{
+  "name": "talain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "npm run webpack",
+    "webpack": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyChloe/talain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyChloe/talain/issues"
+  },
+  "homepage": "https://github.com/AlyChloe/talain#readme",
+  "dependencies": {
+    "webpack": "4.12.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.8"
+  }
+}
