@@ -1,9 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  entry: './js/app.js',
+  entry: './js/page.js',
   output: {
-    filename: './dist/bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    alias: {
+       handlebars: 'handlebars/dist/handlebars.min.js'
+    }
   }
 };

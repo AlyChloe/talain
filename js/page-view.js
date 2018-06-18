@@ -1,6 +1,6 @@
 'use strict';
 
-require('../ext/handlebars/eq');
+require('handlebars');
 const aboutTemplate = require('./pages/about.hbs');
 const contactTemplate = require('./pages/contact.hbs');
 
