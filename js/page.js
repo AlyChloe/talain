@@ -4,5 +4,8 @@ import * as PageView from './page-view';
 import * as PageState from './page-state';
 
 document.addEventListener('DOMContentLoaded', function () {
-   console.log('WORKING'); 
+    const mainElement = document.querySelector('.c-main');
+    const view = PageView;
+    const state = PageState.create();
+    view.create(mainElement, state).render();
 });
