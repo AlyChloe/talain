@@ -1,5 +1,71 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
 body {
     background-color: black;
     font-family: 'Heebo', sans-serif;
-    color: #cfcabf;
+    color: #C9C4B8;
+    display: grid;
+    grid-template-rows: 120px 2fr 50px;
+}
+
+.c-header {
+    grid-row: 1;
+}
+
+.c-content {
+    grid-row: 2;
+}
+
+.c-footer {
+    grid-row: 3;
+}
+
+.c-footer__item {
+    padding-right: 10px;
+}
+
+/***** Theme *****/
+.t-center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-hind-font {
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+}
+
+.t-stretched-small,
+.t-stretched-large {
+    width: 100px;
+    font-size: 25px;
+    transform: scale(1,1.6);
+}
+
+.t-stretched-small {
+    letter-spacing: 5px;
+}
+
+.t-stretched-large {
+    letter-spacing: 10px;
+}
+
+/***** Typography *****/
+.t1 {
+    font-size: 56px;
+    transform: scale(1,1.6);
+    align-self: center;
+}
+
+.t2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
 }
