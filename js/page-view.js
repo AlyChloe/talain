@@ -2,6 +2,7 @@
 
 const Handlebars = require('handlebars');
 const $ = require('jquery');
+const homeTemplate = require('./pages/home.hbs');
 const aboutTemplate = require('./pages/about.hbs');
 const contactTemplate = require('./pages/contact.hbs');
 
@@ -10,7 +11,7 @@ const pageViewPrototype = {
         const templateContainer = document.createElement('div');
         templateContainer.className = 'c-main';
         const data = {title: "My New Post", body: "This is my first post!"};
-        templateContainer.innerHTML = aboutTemplate(data);
+        templateContainer.innerHTML = homeTemplate(data);
         const mainElement = document.querySelector('main');
         mainElement.append(templateContainer);
     }

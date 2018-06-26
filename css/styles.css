@@ -3,7 +3,6 @@ html {
     margin: 0;
     height: 100%;
     padding: 0;
-    overflow: hidden;
 }
 
 body {
@@ -11,11 +10,22 @@ body {
     font-family: 'Heebo', sans-serif;
     color: #C9C4B8;
     display: grid;
-    grid-template-rows: 120px 2fr 50px;
+    grid-template-rows: 120px 1fr 160px;
 }
 
 .c-header {
     grid-row: 1;
+}
+
+.c-video {
+    overflow: hidden;
+    display: block;
+    height: 400px;
+}
+
+.c-video__film {
+    margin-top: -55px;
+    width: 100%;
 }
 
 .c-content {
@@ -27,14 +37,23 @@ body {
 }
 
 .c-footer__item {
-    padding-right: 10px;
 }
 
 /***** Theme *****/
-.t-center-content {
+.t-center-content,
+.t-center-footer {
     display: flex;
+}
+
+.t-center-content {
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.t-center-footer {
+    justify-content: space-around;
+    padding-top: 20px;
 }
 
 .t-hind-font {
@@ -42,26 +61,20 @@ body {
     text-transform: uppercase;
 }
 
-.t-stretched-small,
-.t-stretched-large {
-    width: 100px;
-    font-size: 25px;
-    transform: scale(1,1.6);
+.t-fade {
+    color: #C9C4B8;
+    animation: fadeIn 12s ease-in; 
 }
 
-.t-stretched-small {
-    letter-spacing: 5px;
-}
-
-.t-stretched-large {
-    letter-spacing: 10px;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /***** Typography *****/
 .t1 {
     font-size: 56px;
     transform: scale(1,1.6);
-    align-self: center;
 }
 
 .t2 {
