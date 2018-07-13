@@ -45,7 +45,7 @@ const pageViewPrototype = {
     }
 }
 
-export const create = function (mainElement, footerElement, state) {
+export const create = function (headerElement, mainElement, footerElement, state) {
     const view = Object.create(pageViewPrototype);
     view._mainElement = mainElement;
     view._template = homeTemplate;
@@ -53,6 +53,7 @@ export const create = function (mainElement, footerElement, state) {
 
     const links = footerElement.querySelectorAll('.js-link');
     links.forEach(link => link.addEventListener('click', view._onClickChangeTemplate.bind(view)));
+    headerElement.addEventListener('click', view._onClickChangeTemplate.bind(view));
 
     return view;
 }

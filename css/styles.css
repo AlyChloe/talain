@@ -17,6 +17,10 @@ body {
     grid-row: 1;
 }
 
+.c-main {
+    min-height: 545px;
+}
+
 .c-video {
     overflow: hidden;
     display: block;
@@ -34,9 +38,6 @@ body {
 
 .c-footer {
     grid-row: 3;
-}
-
-.c-footer__item {
 }
 
 /***** Theme *****/
@@ -81,4 +82,8 @@ body {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 100;
+}
+
+.u-clickable {
+    cursor: pointer;
 }
