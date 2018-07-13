@@ -10,7 +10,7 @@ body {
     font-family: 'Heebo', sans-serif;
     color: #C9C4B8;
     display: grid;
-    grid-template-rows: 120px 1fr 160px;
+    grid-template-rows: 120px 1fr 110px;
 }
 
 .c-header {
@@ -20,11 +20,11 @@ body {
 .c-video {
     overflow: hidden;
     display: block;
-    height: 400px;
+    height: 545px;
 }
 
 .c-video__film {
-    margin-top: -55px;
+    margin-top: -75px;
     width: 100%;
 }
 
