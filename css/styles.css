@@ -10,7 +10,7 @@ body {
     font-family: 'Heebo', sans-serif;
     color: #C9C4B8;
     display: grid;
-    grid-template-rows: 85px 1fr 108px;
+    grid-template-rows: 85px 1fr 120px;
 }
 
 .c-header {
@@ -18,17 +18,17 @@ body {
 }
 
 .c-about {
-    width: 70%;
+    width: 81%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 10px 0;
     line-height: 32px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
 }
 
 .c-video {
     overflow: hidden;
-    height: 470px;
+    height: 460px;
     position: relative;
 }
 
@@ -50,7 +50,7 @@ body {
 .c-form {
     max-width: 400px;
     margin: 0 auto;
-    padding-top: 35px;
+    padding: 15px 25px 0;
 }
 
 .c-form__label {
@@ -66,6 +66,7 @@ body {
     background-color: #d3d3d3;
     font-size: 16px;
     font-weight: lighter;
+    box-sizing: border-box;
 }
 
 .c-form__submit {
@@ -164,5 +165,15 @@ body {
 
     .c-video {
         height: 505px;
+    }
+
+    .c-form {
+        padding: 35px 0 0 0;
+    }
+
+    .c-about {
+        font-size: 18px;
+        width: 70%;
+        padding: 20px 0 0 0 ;
     }
 }
