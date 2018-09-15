@@ -10,9 +10,4 @@ document.addEventListener('DOMContentLoaded', function () {
     const view = PageView;
     const state = PageState.create();
     view.create(headerElement, mainElement, footerElement, state).render();
-
-    //overriding chrome/safari automute video rule
-    const video = document.querySelector('.c-video__film');
-    video.play().then(() => video.pause());
-    setTimeout(() => video.play().catch(console.error), 0);
 });
