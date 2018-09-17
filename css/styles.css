@@ -34,19 +34,6 @@ body {
     font-weight: lighter;
 }
 
-.c-video {
-    overflow: hidden;
-    height: 460px;
-    position: relative;
-}
-
-.c-video__film {
-    object-fit: cover;
-    height: 100vh;
-    margin-top: -75px;
-    width: 100%;
-}
-
 .c-form {
     max-width: 400px;
     margin: 0 auto;
@@ -168,6 +155,18 @@ body {
         font-size: 18px;
         width: 70%;
         padding: 20px 0 0 0 ;
+    }
+
+    .c-video {
+        overflow: hidden;
+        height: 460px;
+    }
+
+    .c-video__film {
+        object-fit: cover;
+        height: 100vh;
+        margin-top: -75px;
+        width: 100%;
     }
 }
 
