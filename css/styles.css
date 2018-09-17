@@ -18,7 +18,7 @@ body {
     font-family: 'Heebo', sans-serif;
     color: #C9C4B8;
     display: grid;
-    grid-template-rows: 85px 1fr 120px;
+    grid-template-rows: 85px 1fr 160px;
 }
 
 .c-header {
@@ -36,7 +36,7 @@ body {
 
 .c-video {
     overflow: hidden;
-    height: 460px;
+    height: 420px;
 }
 
 .c-video__film {
