@@ -45,15 +45,17 @@ const pageViewPrototype = {
     }
 }
 
-export const create = function (headerElement, mainElement, footerElement, state) {
+export const create = function (body, state) {
     const view = Object.create(pageViewPrototype);
-    view._mainElement = mainElement;
+    view._mainElement = body.querySelector('.c-content');
+    view._headerElement = body.querySelector('.js-header-link');
+    view._footerElement = body.querySelector('.c-footer');
     view._template = homeTemplate;
     view.state = state;
 
-    const links = footerElement.querySelectorAll('.js-link');
+    const links = view._footerElement.querySelectorAll('.js-link');
     links.forEach(link => link.addEventListener('click', view._onClickChangeTemplate.bind(view)));
-    headerElement.addEventListener('click', view._onClickChangeTemplate.bind(view));
+    view._headerElement.addEventListener('click', view._onClickChangeTemplate.bind(view));
 
     return view;
 }
