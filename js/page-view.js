@@ -5,6 +5,7 @@ const $ = require('jquery');
 const homeTemplate = require('./pages/home.hbs');
 const aboutTemplate = require('./pages/about.hbs');
 const contactTemplate = require('./pages/contact.hbs');
+const workTemplate = require('./pages/work.hbs');
 
 const pageViewPrototype = {
     render: function () {
@@ -34,6 +35,9 @@ const pageViewPrototype = {
         }
         if (clickedTemplate === 'contact') {
             return contactTemplate;
+        }
+        if (clickedTemplate === 'work') {
+            return workTemplate;
         }
     },
 

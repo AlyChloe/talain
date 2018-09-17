@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Futura';
-    src: url('./Futura.ttc');
-    src: url('./Futura.ttc') format('truetype'),
+    src: url('./Futura.ttf');
+    src: url('./Futura.ttf') format('truetype'),
     font-weight: normal;
     font-style: normal;
 }
@@ -37,11 +37,20 @@ body {
 .c-video {
     overflow: hidden;
     height: 420px;
+    position: relative;
 }
 
 .c-video__film {
     object-fit: contain;
     width: 100%;
+}
+
+.c-video__short {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .c-form {
@@ -111,7 +120,7 @@ body {
     font-family: 'Futura', 'Hind', sans-serif;
     text-transform: uppercase;
     color: transparent;
-    text-shadow: 0 0 1px rgba(201,196,197, 1);
+    text-shadow: 0 0 1px rgba(208,202,191, 1);
 }
 
 .t-fade {
@@ -149,7 +158,7 @@ body {
     }
 
     .t1 {
-        font-size: 70px;
+        font-size: 95px;
     }
 
     .c-video {
@@ -171,13 +180,17 @@ body {
         height: 100vh;
         margin-top: -75px;
     }
+    
+    .c-video__short {
+        margin-top: -90px;
+    }
 
     .t-center-content {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 
     .c-svg {
-        padding-top: 20px;
+        padding-top: 15px;
     }
 }
 
