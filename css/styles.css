@@ -40,9 +40,7 @@ body {
 }
 
 .c-video__film {
-    object-fit: cover;
-    height: 100vh;
-    margin-top: -75px;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -167,6 +165,12 @@ body {
         font-size: 18px;
         width: 70%;
         padding: 20px 0 0 0 ;
+    }
+
+    .c-video__film {
+        object-fit: cover;
+        height: 100vh;
+        margin-top: -75px;
     }
 }
 
