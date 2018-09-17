@@ -38,6 +38,7 @@ body {
     overflow: hidden;
     height: 420px;
     position: relative;
+    display: flex;
 }
 
 .c-video__film {
