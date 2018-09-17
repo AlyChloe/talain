@@ -100,7 +100,6 @@ body {
 .t-center-content {
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 15px;
 }
 
 .t-center-footer {
@@ -171,6 +170,10 @@ body {
         object-fit: cover;
         height: 100vh;
         margin-top: -75px;
+    }
+
+    .t-center-content {
+        padding-bottom: 15px;
     }
 }
 
